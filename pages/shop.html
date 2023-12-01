@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shoori - Shop</title>
+    <!-- CSS de Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- CSS Local -->
+    <link rel="stylesheet" href="../css/styles.css">
+  </head>
+    <body>
+      <!-- Header del Shop -->
+      <nav class="navbar navbar-expand-xl navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand fs-2 fw-bold" href="../index.html">
+            <img
+              class="rounded-circle w-30"
+              src="../Images/logo.jpg"
+              alt="logo"
+            />
+            <span>Shoori Art</span>
+          </a>
+          <!-- Hamburguesa -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarBasic"
+            aria-controls="navbarBasic"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- ITEMS DE NAVBAR -->
+          <div class="collapse navbar-collapse" id="navbarBasic">
+            <ul class="navbar-nav ms-auto mb-2 mb-xl-0 fs-5 p-2 text-center">
+              <li class="nav-item me-3">
+                <a class="nav-link fw-bold active" aria-current="page" href="#"
+                  >Gallery</a
+                >
+              </li>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link fw-bold" href="./contact.html">Contact</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link fw-bold" href="./about.html">About</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link fw-bold" href="./shop.html">Shop</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Main de Shop -->
+      <main>
+        <!-- slider de imagenes -->
+        <section>
+          <img src="../Images/Chica de pelo azul practica.png" alt="chica de pelo azul">
+        </section>
+        <!-- Section de comprar -->
+        <section>
+          <h1>Sunny Days</h1>
+          <p>20 USD</p>
+          <form action="" method="post">
+            <select name="size" id="size">
+              <option value="">20x20cm</option>
+              <option value="">50x50cm</option>
+              <option value="">100x100cm</option>
+            </select>
+          </form>
+          <br>
+          <button>ADD TO CART</button>
+          <br>
+          <br>
+          <span>Envios A Todo El Pais</span> <button>Calcular envio</button>
+          <h3>Descripcion del producto</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eligendi corporis rerum doloribus aut ullam eum quasi eius officiis commodi odio fuga deleniti, earum ipsum! Tenetur et saepe deserunt quo.</p>
+        </section>
+      </main>
+      <!-- Footer del shop -->
+      <footer class="footerMain center">
+        <p>Copyright © 2023 Shoori</p>
+        <a href="https://www.instagram.com/shoori_draws/" target="_blank">instagram</a>
+        <a href="https://twitter.com/Shoori_draws" target="_blank">twitter</a>
+      </footer>
+      <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+</body>
+</html>

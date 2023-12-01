@@ -1,0 +1,42 @@
+/* general */
+@font-face {
+  font-family: "oswald";
+  src: url(../Fonts/Oswald-VariableFont_wght.ttf);
+}
+
+body {
+  overflow-y: scroll;
+}
+.center {
+  text-align: center;
+}
+html {
+  font-family: "oswald", sans-serif;
+}
+
+/* home */
+.imgBackground {
+  width: 100%;
+}
+
+/* gallery */
+.footerMain {
+  color: grey;
+}
+
+/* Listas header */
+.list {
+  padding-inline-start: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+/* contact */
+.titleh1 {
+  font-size: 4rem;
+}
+
+/* about */
+.abouth2 {
+  text-align: center;
+}
