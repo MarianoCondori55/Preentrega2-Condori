@@ -24,7 +24,7 @@
   </head>
   <body>
     <!-- Header del contact -->
-    <header>
+    <header class="position-absolute w-100">
       <nav class="navbar navbar-expand-xl navbar-light bg-light">
         <div class="container">
           <a class="navbar-brand fs-2 fw-bold p-0" href="../index.html">
@@ -70,32 +70,60 @@
     </header>
     <!-- Main de Contact -->
     <main>
-      <h1 class="titleh1 center">Contact</h1>
-      <section>
-        <form class="form center" id="form01" action="form.php" method="post">
-          <!-- input nombre -->
-          <label for=""></label>
-          <input type="text" name="nombre" id="nombre" placeholder="Nombre" />
-          <!-- input email -->
-          <br />
-          <br />
-          <label for=""></label>
-          <input type="email" name="email" id="email" placeholder="Email" />
-          <!-- input message -->
-          <br />
-          <p></p>
-          <textarea
-            name="message"
-            id="message"
-            cols="30"
-            rows="10"
-            placeholder="Message"
-          ></textarea>
-          <!-- input SUBMIT -->
-          <p></p>
-          <input type="submit" value="SUBMIT" />
-        </form>
+      <section class="contact-title">
+        <div class="contact-left">
+          <h2 class="">CONTACT US</h2>
+        </div>
+
+        <div class="contact-right">
+          <p class="p-box">
+            <span class="span-box"
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+              fugiat deserunt, libero consectetur voluptates consequuntur
+            </span>
+          </p>
+        </div>
       </section>
+      <div class="contact-info">
+        <div class="contact-left-info">
+          <div class="item">
+            <h3 class="h3-item">Email</h3>
+            <a href="">shooricontact@gmail.com</a>
+          </div>
+          <div class="item">
+            <h3 class="h3-item">PHONE</h3>
+            <a href="">+54 011-0000-000</a>
+          </div>
+          <div class="item">
+            <h3 class="h3-item">ADRESS</h3>
+            <a href="">shooricontact@gmail.com</a>
+          </div>
+          <div class="item">
+            <h3 class="h3-item">SOCIALS</h3>
+            <div class="icons">
+              <a href="#" class="text-light">
+                <i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="text-light"> <i class="fab fa-twitter"></i></a>
+              <a href="#" class="text-light">
+                <i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" class="text-light"> <i class="fab fa-twitch"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-right-info">
+          <form action="" method="post">
+            <div class="top">
+              <input type="text" placeholder="NAME" />
+              <input type="text" placeholder="EMAIL" />
+            </div>
+            <textarea name="name" placeholder="MESSAGE"></textarea>
+            <button type="submit">SEND MESSAGE</button>
+          </form>
+        </div>
+      </div>
     </main>
     <!-- Footer del contact -->
     <footer class="bg-light text-dark pt-4 pb-1">
