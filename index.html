@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shoori - Art</title>
+    <title>Shoori - Home</title>
     <!-- CSS de Bootstrap 5 -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -20,11 +20,11 @@
       referrerpolicy="no-referrer"
     />
     <!-- CSS Local -->
-    <link rel="stylesheet" href="../pre-entragable-1/CSS/styles.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
   </head>
-  <body>
+  <body class="bg-img">
     <!-- Header del index -->
-    <header>
+    <header class="position-absolute w-100">
       <nav class="navbar navbar-expand-xl navbar-light bg-light">
         <div class="container">
           <a class="navbar-brand fs-2 fw-bold p-0" href="../index.html">
@@ -70,24 +70,25 @@
         </div>
       </nav>
     </header>
+
     <!-- Main del index -->
-    <main>
-      <img
-        class="imgBackground w-100 image-fluid"
-        src="./Images/Angel devil mod DeviantArt.png"
-        alt="Devil angel chainsawman"
-      />
-      <section class="center">
-        <h1 class="center titleh1">Welcome</h1>
-        <a href="./pages/gallery.html">Go To Gallery</a>
+
+    <main id="hero" class="">
+      <section class="caption">
+        <h1 class="welcome-title">Welcome</h1>
+        <a class="caption-link" href="/pages/gallery.html">GO TO GALLERY</a>
       </section>
     </main>
+
     <!-- Footer Del index -->
-    <footer class="bg-light text-dark pt-4 pb-1">
+
+    <footer
+      class="bg-light text-dark pt-4 pb-1 bg-transparent vh-20 fixed-bottom"
+    >
       <div class="container text-center"></div>
 
       <div class="text-center">
-        <div class="text-center mb-2 fs-5 fw-bold">
+        <div class="text-light text-center mb-2 fs-5 fw-bold">
           <p>Copyright © 2023 Shoori</p>
         </div>
       </div>
@@ -95,15 +96,19 @@
       <div class="text-center">
         <ul class="list-untyled list-inline fs-2">
           <li class="list-inline-item">
-            <a href="#" class="text-dark"> <i class="fab fa-instagram"></i> </a>
+            <a href="#" class="text-light">
+              <i class="fab fa-instagram"></i>
+            </a>
           </li>
           <li class="list-inline-item">
-            <a href="#" class="text-dark">
+            <a href="#" class="text-light">
               <i class="fab fa-artstation"></i>
             </a>
           </li>
           <li class="list-inline-item">
-            <a href="#" class="text-dark"> <i class="fab fa-instagram"></i> </a>
+            <a href="#" class="text-light">
+              <i class="fab fa-instagram"></i>
+            </a>
           </li>
         </ul>
       </div>

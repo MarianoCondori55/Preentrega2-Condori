@@ -3,17 +3,46 @@
   font-family: "oswald";
   src: url(../Fonts/Oswald-VariableFont_wght.ttf);
 }
-
 body {
-  overflow-y: scroll;
+  height: 100vh;
 }
 .center {
   text-align: center;
 }
 
 /* home */
-.imgBackground {
+
+.bg-img {
+  background-image: url("/Images/Angel\ devil\ mod\ DeviantArt.png");
+  background-position-y: 90px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
   width: 100%;
+  overflow: hidden;
+}
+
+.welcome-title {
+  font-size: 8rem;
+}
+
+.caption {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+.caption-link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 2rem;
+  border: 2px solid white;
+  border-radius: 100px;
 }
 
 /* gallery */
@@ -36,4 +65,18 @@ body {
 /* about */
 .abouth2 {
   text-align: center;
+}
+/* mq de celular */
+@media screen and (max-width: 450px) {
+  .welcome-title {
+    font-size: 4rem;
+  }
+  .bg-img {
+    background-position-y: 10px;
+    background-position-x: -120px;
+  }
+  .caption {
+    justify-content: center;
+    height: 150vh;
+  }
 }
