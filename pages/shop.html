@@ -68,39 +68,90 @@
     <!-- Main de Shop -->
     <main>
       <!-- slider de imagenes -->
-      <section>
-        <img
-          src="../Images/Chica de pelo azul practica.png"
-          alt="chica de pelo azul"
-        />
-      </section>
-      <!-- Section de comprar -->
-      <section>
-        <h1>Sunny Days</h1>
-        <p>20 USD</p>
-        <form action="" method="post">
-          <select name="size" id="size">
-            <option value="">20x20cm</option>
-            <option value="">50x50cm</option>
-            <option value="">100x100cm</option>
+      <div class="row py-5 g-5 w-100 p-5">
+        <div class="col-12 col-lg-6">
+          <img
+            src="../Images/mitaka 3.png"
+            class="m-1 slideMainImage w-100"
+            data-bs-toggle="modal"
+            data-bs-target="#imageModal"
+            alt="mitaka"
+          />
+          <div>
+            <img
+              src="../Images/mitaka 3.png"
+              width="60"
+              class="m-1 sliderThumb"
+              alt="mitaka"
+            />
+            <img
+              src="../Images/mitaka 3.png"
+              width="60"
+              class="m-1 sliderThumb"
+              alt="mitaka"
+            />
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <h2 id="prductName">Asa mitaka</h2>
+          <small class="text-muted">#3434</small>
+          <h2 class="my-4">
+            <span>USD</span>
+            <span id="price">99</span>
+            <span>$</span>
+          </h2>
+          <label for="selectSize" class="text-muted"> Size: </label>
+          <select name="selectSize" id="size" class="form-select">
+            <option selected>20x20cm</option>
+            <option value="1">40x40cm</option>
+            <option value="2">100x100cm</option>
           </select>
-        </form>
-        <br />
-        <button>ADD TO CART</button>
-        <br />
-        <br />
-        <span>Envios A Todo El Pais</span> <button>Calcular envio</button>
-        <h3>Descripcion del producto</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-          eligendi corporis rerum doloribus aut ullam eum quasi eius officiis
-          commodi odio fuga deleniti, earum ipsum! Tenetur et saepe deserunt
-          quo.
-        </p>
-      </section>
+          <div class="d-grid my-4">
+            <button class="btn btn-lg btn-danger" type="button" id="Bag">
+              Buy
+            </button>
+          </div>
+          <div class="d-flex align-items-center my-4">
+            <span class="d-inline-block fw-bold">ENVIOS A TODO EL PAIS</span>
+            <div class="px-2">
+              <button class="btn btn-lg btn-danger" type="button" id="envio">
+                Calcular envio
+              </button>
+            </div>
+          </div>
+          <div class="accordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-target="#collapseOne"
+                  data-bs-toggle="collapse"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  <strong>Description</strong>
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-colapse collapse show"
+                aria-labelledby="headingOne"
+              >
+                <div class="accordion-body">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. At
+                  adipisci ex illum, debitis vitae sed suscipit nihil
+                  accusantium sequi architecto dolorum enim cumque in voluptates
+                  minus unde distinctio harum dolore.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <!-- Footer del shop -->
-    <footer class="bg-light text-dark pt-4 pb-1">
+    <footer class="bg-light text-dark pt-4 pb-1 w-100">
       <div class="container text-center"></div>
 
       <div class="text-center">

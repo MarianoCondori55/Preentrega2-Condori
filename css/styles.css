@@ -1,4 +1,7 @@
 /* general */
+html {
+  overflow-y: scroll;
+}
 @font-face {
   font-family: "oswald";
   src: url(../Fonts/Oswald-VariableFont_wght.ttf);
@@ -46,6 +49,9 @@ body {
 }
 
 /* gallery */
+.gallery-contenedor {
+  padding-top: 116px;
+}
 .footerMain {
   color: grey;
 }
@@ -172,8 +178,52 @@ a {
 .abouth2 {
   text-align: center;
 }
+.contenedor {
+  width: 100%;
+  padding: 50px 200px;
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "box1 box2"
+    "box3 box4";
+}
+.box {
+  /* border: 1px solid tomato; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-1 {
+  grid-area: box1;
+}
+.box-2 {
+  grid-area: box2;
+  display: flex;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0px 20px;
+}
+.box-3 {
+  grid-area: box3;
+  display: flex;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0px 50px;
+}
+.box-4 {
+  grid-area: box4;
+}
+
 /* mq de celular */
 @media screen and (max-width: 450px) {
+  /* Media de home */
   .welcome-title {
     font-size: 4rem;
   }
@@ -184,5 +234,17 @@ a {
   .caption {
     justify-content: center;
     height: 150vh;
+  }
+  /* Media de about */
+  .contenedor {
+    padding: 0px;
+    margin: 0px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "box1"
+      "box2"
+      "box4"
+      "box3";
   }
 }
